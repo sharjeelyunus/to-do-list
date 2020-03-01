@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0px;
   padding: 0px;
@@ -90,7 +92,7 @@ button#add {
   font-size: 1.2em;
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
   background-color: #63b931;
   color: #fff;
   text-transform: uppercase;
@@ -119,7 +121,7 @@ i.fa-cart-plus {
 /* Cover */
 
 input {
-  width: 50%;
+  width: 40%;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -132,13 +134,6 @@ input {
 
 input:hover {
   opacity: 1;
-}
-
-.add-btn {
-  padding-top: 10px;
-  padding-left: 265px;
-  padding-right: 265px;
-  padding-bottom: 10px;
 }
 
 * {
@@ -156,3 +151,128 @@ ol.guide {
 .shoplist {
   list-style: none;
 }
+
+.listItem {
+  cursor: pointer;
+  background: #fb7960;
+  color: #fff;
+  text-align: left;
+  padding: 8px 5px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.listItem:nth-child(even) {
+  background: #e85d45;
+}
+
+/* when user click on list item text it marks it out */
+.done {
+  background-color: #ccc;
+}
+
+.done:nth-child(even) {
+  background: #ccc;
+}
+
+/* display: none for the list items when user click on the X button */
+.delete {
+  display: none;
+}
+
+/* style for the button that is created on JavaScript*/
+.deleteBtn {
+  cursor: pointer;
+  border-radius: 5px;
+  background: #db0808;
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #fff;
+  margin-top: -8px;
+  padding: 8px;
+  transition: background 1s;
+  font-weight: bold;
+  outline: none;
+}
+
+.deleteBtn:hover {
+  background: #ff0000;
+}
+
+/* footer section */
+/* the navbar social media buttons */
+/* facebook */
+.fa-facebook-square {
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+  background: none;
+}
+
+/* twitter */
+.fa-twitter-square {
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
+}
+
+.fa-twitter-square:hover {
+  color: #1da1F2;
+}
+
+.fa-instagram {
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+.fa-github {
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
+}
+
+.fa-github:hover {
+  color: #000000;
+}
+
+.fa-globe {
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
+}
+
+.fa-globe:hover {
+  color: #0066b3;
+}
+
+footer {
+  padding: 10px 0;
+  box-shadow: 5px -15px 15px rgb(169, 214, 210);
+  background: #a9d6d2;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  font-size: 0.85em;
+  height: 100px;
+  margin-top: 90px;
+}
+
+footer a{
+  transition: 400ms;
+}
+
+footer a:hover{
+  color: #989898;
+  text-decoration: none;
+}
+/* end of footer section */
