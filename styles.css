@@ -1,0 +1,158 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #9fd5e9;
+  text-align: center;
+  color: #43494e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+span {
+  color: white;
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.animated {
+  animation-duration: 1s;
+}
+
+/* Borders */
+div.borderBottom {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* 3 borders color after h1 */
+div.borderColor1 {
+  display: inline-block;
+  background: #fdb44b;
+  width: 95px;
+  height: 5px;
+}
+
+div.borderColor2 {
+  display: inline-block;
+  background: #f71e35;
+  width: 95px;
+  height: 5px;
+}
+
+div.borderColor3 {
+  display: inline-block;
+  background: #0066b3;
+  width: 95px;
+  height: 5px;
+}
+
+/* responsive mobile */
+@media (max-width: 991.5px) {
+  input {
+    width: 100%;
+  }
+}
+
+button#add {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  background-color: #63b931;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  transition: background-color 1s;
+}
+
+button#add:hover {
+  background: #74ce3b;
+}
+
+/* responsive mobile */
+@media (max-width: 991.5px) {
+  button#add {
+    width: 100%;
+  }
+}
+
+i.fa-cart-plus {
+  padding-right: 5px;
+  font-size: 1.29em;
+}
+
+/* Cover */
+
+input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 1.2em;
+  color: #616161;
+  opacity: 0.8;
+  transition: opacity 400ms;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+.add-btn {
+  padding-top: 10px;
+  padding-left: 265px;
+  padding-right: 265px;
+  padding-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol.guide {
+  margin: 0px;
+  text-align: left;
+  list-style-position: inside;
+}
+
+.shoplist {
+  list-style: none;
+}
