@@ -1,11 +1,9 @@
-
-
 body {
   margin: 0px;
   padding: 0px;
-  background: #9fd5e9;
+  background: #3d3f3e;
+  color: #dddddd;
   text-align: center;
-  color: #43494e;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -79,20 +77,13 @@ div.borderColor3 {
   height: 5px;
 }
 
-/* responsive mobile */
-@media (max-width: 991.5px) {
-  input {
-    width: 100%;
-  }
-}
-
 button#add {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1.2em;
   display: block;
   margin: 0 auto;
-  width: 40%;
+  width: 50%;
   background-color: #63b931;
   color: #fff;
   text-transform: uppercase;
@@ -106,13 +97,6 @@ button#add:hover {
   background: #74ce3b;
 }
 
-/* responsive mobile */
-@media (max-width: 991.5px) {
-  button#add {
-    width: 100%;
-  }
-}
-
 i.fa-cart-plus {
   padding-right: 5px;
   font-size: 1.29em;
@@ -121,7 +105,7 @@ i.fa-cart-plus {
 /* Cover */
 
 input {
-  width: 40%;
+  width: 50%;
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -148,10 +132,6 @@ ol.guide {
   list-style-position: inside;
 }
 
-.shoplist {
-  list-style: none;
-}
-
 .listItem {
   cursor: pointer;
   background: #fb7960;
@@ -166,39 +146,18 @@ ol.guide {
 .listItem:nth-child(even) {
   background: #e85d45;
 }
-
-/* when user click on list item text it marks it out */
-.done {
-  background-color: #ccc;
-}
-
-.done:nth-child(even) {
-  background: #ccc;
-}
-
-/* display: none for the list items when user click on the X button */
-.delete {
-  display: none;
-}
-
-/* style for the button that is created on JavaScript*/
-.deleteBtn {
+.shoplist {
+  font-size: 20px;
   cursor: pointer;
-  border-radius: 5px;
-  background: #db0808;
-  position: absolute;
-  right: 0;
-  border: none;
-  color: #fff;
-  margin-top: -8px;
-  padding: 8px;
-  transition: background 1s;
-  font-weight: bold;
-  outline: none;
+  width: 40%;
+  background-color: rgb(70, 69, 69);
+  list-style: none;
 }
 
-.deleteBtn:hover {
-  background: #ff0000;
+.done {
+  text-decoration: line-through;
+  background-color: rgba(255, 41, 41, 0.459);
+  border-radius: 50px;
 }
 
 /* footer section */
@@ -211,8 +170,15 @@ ol.guide {
 }
 
 .fa-facebook-square:hover {
-  color: #3b5998;
+  color: #1d56d3;
   background: none;
+}
+
+.fa-trash {
+  background: none;
+  transition: color 600ms ease-in-out;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 19px;
 }
 
 /* twitter */
@@ -223,7 +189,7 @@ ol.guide {
 }
 
 .fa-twitter-square:hover {
-  color: #1da1F2;
+  color: rgb(22, 142, 240);
 }
 
 .fa-instagram {
@@ -233,7 +199,7 @@ ol.guide {
 }
 
 .fa-instagram:hover {
-  color: #e4405f;
+  color: #e63bd7;
 }
 
 .fa-github {
@@ -258,12 +224,12 @@ ol.guide {
 
 footer {
   padding: 10px 0;
-  box-shadow: 5px -15px 15px rgb(169, 214, 210);
-  background: #a9d6d2;
-  color: rgba(0, 0, 0, 0.7);
+  box-shadow: 5px -15px 15px rgb(75, 75, 75);
+  background: #5a5a5a;
+  color: rgba(211, 211, 211, 0.7);
   opacity: 0.7;
   font-size: 0.85em;
-  height: 100px;
+  height: 80px;
   margin-top: 90px;
 }
 
@@ -276,3 +242,28 @@ footer a:hover{
   text-decoration: none;
 }
 /* end of footer section */
+
+@media (max-width: 768px) {
+  input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+  }
+
+  button#add {
+      width: 100%;
+      padding: 5px;
+      font-size: 1em;
+    }
+  
+  .shoplist {
+      font-size: 15px;
+      cursor: pointer;
+      width: 80%;
+  }
+  
+  .container {
+      max-width: 720px;
+  }
+
+}
