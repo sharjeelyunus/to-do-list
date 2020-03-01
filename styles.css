@@ -147,6 +147,7 @@ ol.guide {
   background: #e85d45;
 }
 .shoplist {
+  color: #ffffff;
   font-size: 20px;
   cursor: pointer;
   width: 40%;
@@ -156,8 +157,9 @@ ol.guide {
 
 .done {
   text-decoration: line-through;
-  background-color: rgba(255, 41, 41, 0.459);
+  background-color: rgb(61, 61, 61);
   border-radius: 50px;
+  color: rgb(104, 104, 104);
 }
 
 /* footer section */
